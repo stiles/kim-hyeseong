@@ -320,36 +320,97 @@ body {
     
     .main-headline {
         font-size: 3.5rem;
+        line-height: 1.1;
     }
     
     .alternating-name {
         min-width: auto;
     }
     
+    .name-context {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    
+    .name-order-indicator {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
     .answer-section {
         padding: 40px 30px;
     }
     
+    .answer-label {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
     .final-answer {
         font-size: 2.8rem;
+        line-height: 1.1;
+    }
+    
+    .pronunciation-grid {
+        gap: 20px;
+    }
+    
+    .pronunciation-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .pronunciation-item .syllable {
+        font-size: 1.8rem;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 40px 20px;
+        padding: 30px 20px;
+    }
+    
+    .main-content {
+        gap: 40px;
     }
     
     .main-headline {
         font-size: 2.8rem;
+        line-height: 1.05;
+        margin-bottom: 20px;
+    }
+    
+    .alternating-name {
+        margin-top: 10px;
+    }
+    
+    .name-context {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    
+    .name-order-indicator {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
     }
     
     .hangul-display {
         font-size: 4.5rem;
     }
     
+    .answer-section {
+        padding: 35px 25px;
+    }
+    
+    .answer-label {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+    }
+    
     .final-answer {
         font-size: 2.2rem;
+        line-height: 1.1;
+        margin-bottom: 25px;
     }
     
     .pronunciation-grid {
@@ -357,16 +418,157 @@ body {
         gap: 15px;
     }
     
+    .pronunciation-item h4 {
+        font-size: 1rem;
+    }
+    
+    .pronunciation-item .syllable {
+        font-size: 1.6rem;
+    }
+    
+    .pronunciation-item .guide {
+        font-size: 0.9rem;
+    }
+    
+    .pronunciation-item .explanation {
+        font-size: 0.85rem;
+    }
+    
     .audio-controls {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
     
     .audio-btn {
         min-width: 200px;
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+    
+    .toggle-section {
+        padding: 30px 20px;
+    }
+    
+    .toggle-btn {
+        font-size: 0.9rem;
+        padding: 12px 20px;
     }
     
     .models-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .model-card {
+        padding: 20px;
+    }
+    
+    .model-name {
+        font-size: 1rem;
+    }
+    
+    .model-explanation {
+        font-size: 0.9rem;
+    }
+    
+    .model-ipa {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .main-content {
+        gap: 30px;
+    }
+    
+    .main-headline {
+        font-size: 2.2rem;
+        line-height: 1.05;
+        margin-bottom: 15px;
+    }
+    
+    .alternating-name {
+        margin-top: 8px;
+    }
+    
+    .name-context {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+    
+    .name-order-indicator {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hangul-display {
+        font-size: 3.5rem;
+    }
+    
+    .answer-section {
+        padding: 25px 20px;
+    }
+    
+    .answer-label {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .final-answer {
+        font-size: 1.8rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+    
+    .pronunciation-item h4 {
+        font-size: 0.9rem;
+    }
+    
+    .pronunciation-item .syllable {
+        font-size: 1.4rem;
+    }
+    
+    .pronunciation-item .guide {
+        font-size: 0.85rem;
+    }
+    
+    .pronunciation-item .explanation {
+        font-size: 0.8rem;
+    }
+    
+    .audio-btn {
+        min-width: 180px;
+        font-size: 0.85rem;
+        padding: 10px 16px;
+    }
+    
+    .toggle-section {
+        padding: 25px 15px;
+    }
+    
+    .toggle-btn {
+        font-size: 0.85rem;
+        padding: 10px 16px;
+    }
+    
+    .model-card {
+        padding: 15px;
+    }
+    
+    .model-name {
+        font-size: 0.9rem;
+    }
+    
+    .model-explanation {
+        font-size: 0.85rem;
+    }
+    
+    .model-ipa {
+        font-size: 0.8rem;
     }
 } 
