@@ -1,0 +1,86 @@
+[
+  {
+    "model": "claude-4-sonnet",
+    "headline": "HOW DO YOU PRONOUNCE",
+    "name_romanized": "Kim Hye-seong",
+    "name_hangul": "김혜성",
+    "pronunciation_explanation": "Kim sounds like 'keem' but shorter, Hye sounds like 'heh' with a slight 'y' glide, and Seong sounds like 'sung' but with the vowel more like 'uh'",
+    "ipa": "/kim hje.sʌŋ/",
+    "syllable_breakdown": [
+      { "hangul": "김", "pronounced_as": "keem (but shorter)" },
+      { "hangul": "혜", "pronounced_as": "heh (with slight 'y' sound)" },
+      { "hangul": "성", "pronounced_as": "sung (but vowel like 'uh')" }
+    ],
+    "family_name_explanation": "Kim (김) is pronounced like 'keem' but with a shorter, crisper vowel sound - not quite 'kim' and not quite 'keem'"
+  },
+  {
+    "model": "gemini-2.5-pro",
+    "headline": "HOW DO YOU PRONOUNCE",
+    "name_romanized": "Kim Hye-seong",
+    "name_hangul": "김혜성",
+    "pronunciation_explanation": "Kim is close to 'gim' (with a soft 'g'), Hye sounds like 'hyeh' (a quick glide from 'h' to 'yeh'), and Seong is like 'sung'.",
+    "ipa": "[kim çe̞sʰʌŋ]",
+    "syllable_breakdown": [
+      { "hangul": "김", "pronounced_as": "gim (soft 'g')" },
+      { "hangul": "혜", "pronounced_as": "hyeh" },
+      { "hangul": "성", "pronounced_as": "sung" }
+    ],
+    "family_name_explanation": "The family name Kim (김) starts with a sound between a 'k' and a 'g'; the vowel is short like in the word 'him'."
+  },
+  {
+    "model": "gemini-2.5-pro-v2",
+    "headline": "HOW DO YOU PRONOUNCE",
+    "name_romanized": "Kim Hye-seong",
+    "name_hangul": "김혜성",
+    "pronunciation_explanation": "Kim is pronounced like 'keem' with a short 'i', Hye is like 'hey' with a soft 'h', and Seong is like 'song' with a softer 'o'.",
+    "ipa": "[kim heɪ.sʌŋ]",
+    "syllable_breakdown": [
+      { "hangul": "김", "pronounced_as": "keem (short 'i')" },
+      { "hangul": "혜", "pronounced_as": "hey (soft 'h')" },
+      { "hangul": "성", "pronounced_as": "song (softer 'o')" }
+    ],
+    "family_name_explanation": "The family name Kim (김) is pronounced with a short 'i', similar to 'keem'."
+  },
+  {
+    "model": "gpt-4-turbo",
+    "headline": "HOW DO YOU PRONOUNCE",
+    "name_romanized": "Kim Hye-seong",
+    "name_hangul": "김혜성",
+    "pronunciation_explanation": "Kim is pronounced like 'keem' with a crisp 'k', Hye is like 'heh-yeh' blended quickly, and Seong is like 'suhng' with a nasal 'ng'.",
+    "ipa": "[kim çe̞.sʌŋ]",
+    "syllable_breakdown": [
+      { "hangul": "김", "pronounced_as": "keem (crisp 'k')" },
+      { "hangul": "혜", "pronounced_as": "heh-yeh (blended)" },
+      { "hangul": "성", "pronounced_as": "suhng (nasal 'ng')" }
+    ],
+    "family_name_explanation": "The family name Kim (김) is pronounced with a crisp 'k' and a short 'i', like 'keem' but clipped."
+  },
+  {
+    "model": "grok-4-0709",
+    "headline": "HOW DO YOU PRONOUNCE",
+    "name_romanized": "Kim Hye-seong",
+    "name_hangul": "김혜성",
+    "pronunciation_explanation": "Kim is like 'keem' with a short vowel, Hye rhymes with 'hey' but starts softer, and Seong is like 'sung' with the 'u' as in 'book'.",
+    "ipa": "/kim hje.sʌŋ/",
+    "syllable_breakdown": [
+      { "hangul": "김", "pronounced_as": "keem (short vowel)" },
+      { "hangul": "혜", "pronounced_as": "hye (like 'hey' but softer)" },
+      { "hangul": "성", "pronounced_as": "seong (like 'sung' with 'u' as in 'book')" }
+    ],
+    "family_name_explanation": "The family name Kim (김) is pronounced like 'keem', but with a shorter, clipped vowel sound similar to the 'i' in 'him'."
+  },
+  {
+    "model": "mistral-large-2024",
+    "headline": "HOW DO YOU PRONOUNCE",
+    "name_romanized": "Kim Hye-seong",
+    "name_hangul": "김혜성",
+    "pronunciation_explanation": "Kim is like 'keem' with a short, clipped vowel, Hye sounds like 'hyay' said quickly, and Seong is like 'sung' with the vowel as in 'son'.",
+    "ipa": "/kim çje.sʌŋ/",
+    "syllable_breakdown": [
+      { "hangul": "김", "pronounced_as": "keem (short)" },
+      { "hangul": "혜", "pronounced_as": "hyay" },
+      { "hangul": "성", "pronounced_as": "sung (vowel like 'son')" }
+    ],
+    "family_name_explanation": "Kim (김) starts with an unaspirated 'k' (between 'g' and 'k') followed by a short 'ee' sound, yielding 'keem' but briefer."
+  }
+]

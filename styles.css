@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.question-section {
+    padding-right: 40px;
+}
+
+.main-headline {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    /* text-transform: uppercase; */
+    letter-spacing: -0.02em;
+}
+
+.main-headline .highlight {
+    color: #005A9C;
+}
+
+.alternating-name {
+    display: inline-block;
+    min-width: 600px;
+    transition: all 0.2s ease;
+    /* border-bottom: 4px solid #005A9C; */
+    /* padding-bottom: 8px; */
+    margin-top: 15px;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    /* color: #005A9C; */
+}
+
+.alternating-name.fade {
+    opacity: 0.3;
+    transform: translateY(-5px);
+}
+
+.name-context {
+    font-size: 1.8rem;
+    color: #666;
+    /* margin-bottom: 40px; */
+    font-weight: 400;
+}
+
+.name-order-indicator {
+    font-size: 1rem;
+    color: #999;
+    font-weight: 400;
+    /* letter-spacing: 0.1em; */
+    margin-bottom: 30px;
+    min-height: 20px;
+    transition: all 0.3s ease;
+}
+
+.name-order-indicator.fade {
+    opacity: 0.3;
+}
+
+.hangul-display {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.answer-section {
+    background: #f8f9fa;
+    padding: 60px 50px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.answer-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #005A9C;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.final-answer {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.pronunciation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.pronunciation-item {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    border: 2px solid #e9ecef;
+    text-align: center;
+}
+
+.pronunciation-item h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #005A9C;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pronunciation-item .syllable {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.pronunciation-item .guide {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #005A9C;
+    margin-bottom: 8px;
+}
+
+.pronunciation-item .explanation {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.3;
+}
+
+.audio-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.audio-btn {
+    background: #005A9C;
+    color: white;
+    border: none;
+    padding: 18px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 140px;
+}
+
+.audio-btn:hover {
+    background: #004080;
+    transform: translateY(-2px);
+}
+
+.audio-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.audio-btn.playing {
+    background: #EF3E42;
+}
+
+.toggle-section {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.toggle-btn {
+    background: transparent;
+    color: #005A9C;
+    border: 2px solid #005A9C;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background: #005A9C;
+    color: white;
+}
+
+.models-section {
+    display: none;
+    margin-top: 80px;
+}
+
+.models-section.show {
+    display: block;
+}
+
+.models-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.models-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.models-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.model-card {
+    background: #ffffff;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.model-card:hover {
+    border-color: #005A9C;
+    transform: translateY(-2px);
+}
+
+.model-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #005A9C;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.model-explanation {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.model-ipa {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    color: #EF3E42;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 100px;
+    color: #666;
+}
+
+.error {
+    background: #f8f9fa;
+    color: #EF3E42;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #EF3E42;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        min-height: auto;
+    }
+    
+    .question-section {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .main-headline {
+        font-size: 3.5rem;
+    }
+    
+    .alternating-name {
+        min-width: auto;
+    }
+    
+    .answer-section {
+        padding: 40px 30px;
+    }
+    
+    .final-answer {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+    
+    .main-headline {
+        font-size: 2.8rem;
+    }
+    
+    .hangul-display {
+        font-size: 4.5rem;
+    }
+    
+    .final-answer {
+        font-size: 2.2rem;
+    }
+    
+    .pronunciation-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .audio-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .audio-btn {
+        min-width: 200px;
+    }
+    
+    .models-grid {
+        grid-template-columns: 1fr;
+    }
+} 

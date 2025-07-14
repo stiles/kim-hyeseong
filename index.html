@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How do you pronounce Kim Hye-seong?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loading" class="loading">Loading pronunciations...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="main-content" class="main-content" style="display: none;">
+            <div class="question-section">
+                <h1 class="main-headline">
+                    How <span class="highlight">do</span> we pronounce 
+                    <span id="alternating-name" class="alternating-name">Kim Hye-seong?</span>
+                </h1>
+                <div id="name-order-indicator" class="name-order-indicator">Korean name order (family, given)</div>
+                
+                <div class="name-context">The South Korean second baseman's name is tricky. Here's a quick guide.</div>
+                
+            </div>
+
+            <div class="answer-section">
+                <div class="answer-label">The answer (in English):</div>
+                <div class="final-answer">"Hey-Sung Kim"</div>
+                <div class="answer-label">The answer (in Korean):</div>
+                <div class="pronunciation-grid">
+                    <div class="pronunciation-item">
+                        <h4>Kim</h4>
+                        <div class="syllable">김</div>
+                        <div class="guide">KIM</div>
+                        <div class="explanation">Like "kim" but with a shorter, crisper vowel</div>
+                    </div>
+                    <div class="pronunciation-item">
+                        <h4>Hye</h4>
+                        <div class="syllable">혜</div>
+                        <div class="guide">HEY</div>
+                        <div class="explanation">Like "hey" with a soft "h"</div>
+                    </div>
+                    <div class="pronunciation-item">
+                        <h4>Seong</h4>
+                        <div class="syllable">성</div>
+                        <div class="guide">SUNG</div>
+                        <div class="explanation">Like "sung" but with the vowel more like "uh"</div>
+                    </div>
+                </div>
+                
+                <div class="audio-controls">
+                    <button class="audio-btn korean" onclick="speak('김혜성', 'ko-KR', this)">
+                        <span>🔊</span> Korean
+                    </button>
+                    <button class="audio-btn" onclick="speak('Hey Sung Kim', 'en-US', this)">
+                        <span>🔊</span> English
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <button class="toggle-btn" onclick="toggleModels()">
+                <span id="toggle-text">See how AI models interpret the name</span>
+            </button>
+        </div>
+
+        <div id="models-section" class="models-section">
+            <div class="models-header">
+                <h2>How different AI models explain it</h2>
+                <p>All models converge on the same basic pronunciation</p>
+            </div>
+            <div id="models-grid" class="models-grid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
