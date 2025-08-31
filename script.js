@@ -17,7 +17,7 @@ function alternateName() {
     
     setTimeout(() => {
         if (isKoreanOrder) {
-            nameElement.textContent = 'Hye-seong Kim?';
+            nameElement.textContent = 'Hyeseong Kim?';
             indicatorElement.textContent = 'English name order (given, family)';
         } else {
             nameElement.textContent = 'Kim Hye-seong?';
@@ -168,7 +168,11 @@ function createModelCard(pronunciation) {
     card.innerHTML = `
         <div class="model-name">${pronunciation.model}</div>
         <div class="model-explanation">${pronunciation.pronunciation_explanation}</div>
-        <div class="model-ipa">${pronunciation.ipa}</div>
+        <div class="model-syllables">
+            ${pronunciation.syllable_breakdown.map(syllable => 
+                `<span class="syllable-item"><strong>${syllable.hangul}</strong> → ${syllable.pronounced_as}</span>`
+            ).join(' • ')}
+        </div>
     `;
 
     return card;

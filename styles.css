@@ -279,16 +279,24 @@ body {
     line-height: 1.6;
 }
 
-.model-ipa {
-    font-family: 'Courier New', monospace;
-    font-size: 1.1rem;
-    color: #EF3E42;
-    text-align: center;
+.model-syllables {
     background: #f8f9fa;
-    padding: 12px;
+    padding: 15px;
     border-radius: 6px;
     margin-bottom: 20px;
-    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.syllable-item {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.syllable-item strong {
+    color: #005A9C;
+    font-size: 1.1rem;
 }
 
 .loading, .error {
@@ -471,8 +479,12 @@ body {
         font-size: 0.9rem;
     }
     
-    .model-ipa {
+    .syllable-item {
         font-size: 0.85rem;
+    }
+    
+    .syllable-item strong {
+        font-size: 1rem;
     }
 }
 
@@ -568,7 +580,11 @@ body {
         font-size: 0.85rem;
     }
     
-    .model-ipa {
+    .syllable-item {
         font-size: 0.8rem;
+    }
+    
+    .syllable-item strong {
+        font-size: 0.9rem;
     }
 } 
